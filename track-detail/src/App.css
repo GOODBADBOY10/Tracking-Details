@@ -1,42 +1,92 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.hh-grayBox {
+	background-color: #F8F8F8;
+	padding: 0px;
+  margin-top: 20px;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.pt45{
+  padding-top:45px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.order-tracking{
+	text-align: center;
+	width: 100%;
+	position: relative;
+  display: block;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.order-tracking .is-complete{
+	display: block;
+	position: absolute;
+  left: 10px;
+  top: 0px;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	border: 0px solid #AFAFAF;
+	background-color: #f7be16;
+	margin: 0 auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+	z-index: 2;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.order-tracking .is-complete:after {
+	display: block;
+	position: absolute;
+	content: '';
+	height: 14px;
+	width: 7px;
+	top: -2px;
+	bottom: 0;
+	left: 5px;
+	margin: auto 0;
+	border: 0px solid #AFAFAF;
+	border-width: 0px 2px 2px 0;
+	transform: rotate(45deg);
+	opacity: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.order-tracking.completed .is-complete{
+	border-color: #27aa80;
+	border-width: 0px;
+	background-color: #27aa80;
 }
-
-.card {
-  padding: 2em;
+.order-tracking.completed .is-complete:after {
+	border-color: #fff;
+	border-width: 0px 3px 3px 0;
+	width: 7px;
+	left: 11px;
+	opacity: 1;
 }
-
-.read-the-docs {
-  color: #888;
-} */
+.order-tracking p {
+	color: #A4A4A4;
+	font-size: 16px;
+	margin-top: 8px;
+	margin-bottom: 0;
+	line-height: 20px;
+  text-align: left;
+  margin-left: 50px;
+}
+.order-tracking span {
+  text-align: right;
+  color: #A4A4A4;
+}
+.order-tracking.completed p{
+  color: #000;
+}
+.order-tracking::before {
+	content: '';
+	display: block;
+	height: 4px;
+	/* width: calc(100% - 40px); */
+  width: 50px;
+	background-color: red;
+	top: -10px;
+	position: absolute;
+	/* left: calc(-50% + 190px); */
+  left: -1px;
+	z-index: 0;
+  transform: rotate(90deg);
+}
+.order-tracking:first-child:before{
+  display: none;
+}
+.order-tracking.completed:before{
+  background-color: #27aa80;
+}

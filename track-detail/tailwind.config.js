@@ -16,7 +16,13 @@ export default {
         navyBlue: '#46575A',
         deepBlue: '#12362A',
         lightGray: '#ADBC9F',
-        darkGray: '#D9D9D9'
+        darkGray: '#D9D9D9',
+        darkBlack: '#777777',
+        deepBlack: '#42684F',
+        deepGray: '#78AE8B',
+        whiteWhite: '#FFFFFF',
+        blackBlack: '#000000',
+        blackDark: '#2D2D2D'
       }
     }
   },
