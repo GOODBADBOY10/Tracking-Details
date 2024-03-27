@@ -3,14 +3,18 @@ import React from 'react'
 const TrackingDetails = () => {
   return (
     <>
-      <div className='ml-3 w-96'>
-        <h4>Go back</h4>
-        <div className='drop-shadow-lg shadow-md h-64 w-96 mt-48 py-3 border rounded-md'>
-            <h3 className='font-medium text-2xl text-blackDark ml-2 mb-4'>Track Your Order</h3>
-            <div className=''>
-            <h4 className='ml-2'>Tracking Details</h4>
-            </div>
-            <div className='bg-deepBlack p-1 border mt-2'><h4 className='text-darkGray ml-2'>Tracking Details</h4></div>
+      <div className='w-screen mb-8 relative container m-auto border md:w-60'>
+        <div className='py-3'>
+          <h2 className='font-bold text-xl text-center'>Track your Order</h2>
+        </div>
+        <div className='border m-4 drop-shadow-2xl shadow-lg'>
+        <div className='border p-2'>
+          <h3 className='font-medium text-lg text-center'>Currently Tracking: #AHF238Q</h3>
+        </div>
+        <div className='p-2'>
+          <p className='text-md leading-6'>Stay up to date with the status of your order with tracking number: #AHF238Q</p>
+          <p className='text-md leading-6 mt-2'><button className='text-sm font-medium text-deepGray'>CLICK HERE</button> to track another order</p>
+        </div>
         </div>
       </div>
     </>

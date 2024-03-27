@@ -1,7 +1,7 @@
 .hh-grayBox {
 	background-color: #F8F8F8;
 	padding: 0px;
-  margin-top: 20px;
+    margin-top: 20px;
 }
 .pt45{
   padding-top:45px;
@@ -10,13 +10,13 @@
 	text-align: center;
 	width: 100%;
 	position: relative;
-  display: block;
+    display: block;
 }
-.order-tracking .is-complete{
+/* .order-tracking .is-complete{
 	display: block;
 	position: absolute;
-  left: 10px;
-  top: 0px;
+    left: 10px;
+    top: 0px;
 	border-radius: 50%;
 	height: 30px;
 	width: 30px;
@@ -26,8 +26,8 @@
 	transition: background 0.25s linear;
 	-webkit-transition: background 0.25s linear;
 	z-index: 2;
-}
-.order-tracking .is-complete:after {
+} */
+/* .order-tracking .is-complete:after {
 	display: block;
 	position: absolute;
 	content: '';
@@ -41,7 +41,7 @@
 	border-width: 0px 2px 2px 0;
 	transform: rotate(45deg);
 	opacity: 0;
-}
+} */
 .order-tracking.completed .is-complete{
 	border-color: #27aa80;
 	border-width: 0px;
@@ -60,8 +60,8 @@
 	margin-top: 8px;
 	margin-bottom: 0;
 	line-height: 20px;
-  text-align: left;
-  margin-left: 50px;
+   text-align: left;
+   margin-left: 50px;
 }
 .order-tracking span {
   text-align: right;

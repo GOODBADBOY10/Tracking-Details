@@ -10,11 +10,15 @@ function App() {
  
   return (
     <>
-      {/* <div className='flex items-center justify-between'>
+      <div className='container w-screen m-auto relative md:flex md:justify-between md:mt-6 md:m-4'>
+        <div className=''>
         <TrackingDetails />
+        </div>
+        <div className=''>
         <TrackingAddress />
-      </div> */}
-      <TrackingRoute />
+         <TrackingRoute />
+        </div>
+        </div>
     </>
   )
 }

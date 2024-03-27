@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     screens: {
-      sm: '340px',
+      sm: '380px',
       md: '768px',
       lg: '976px',
       xl: '1440px'
@@ -22,7 +22,8 @@ export default {
         deepGray: '#78AE8B',
         whiteWhite: '#FFFFFF',
         blackBlack: '#000000',
-        blackDark: '#2D2D2D'
+        blackDark: '#2D2D2D',
+        lightGreen: '#25714C'
       }
     }
   },
