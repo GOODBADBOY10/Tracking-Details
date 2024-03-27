@@ -12,36 +12,6 @@
 	position: relative;
     display: block;
 }
-/* .order-tracking .is-complete{
-	display: block;
-	position: absolute;
-    left: 10px;
-    top: 0px;
-	border-radius: 50%;
-	height: 30px;
-	width: 30px;
-	border: 0px solid #AFAFAF;
-	background-color: #f7be16;
-	margin: 0 auto;
-	transition: background 0.25s linear;
-	-webkit-transition: background 0.25s linear;
-	z-index: 2;
-} */
-/* .order-tracking .is-complete:after {
-	display: block;
-	position: absolute;
-	content: '';
-	height: 14px;
-	width: 7px;
-	top: -2px;
-	bottom: 0;
-	left: 5px;
-	margin: auto 0;
-	border: 0px solid #AFAFAF;
-	border-width: 0px 2px 2px 0;
-	transform: rotate(45deg);
-	opacity: 0;
-} */
 .order-tracking.completed .is-complete{
 	border-color: #27aa80;
 	border-width: 0px;
